@@ -1,29 +1,230 @@
-<!doctype html>
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Budgeting Web App</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lexend:wght@100..900&display=swap"
     rel="stylesheet">
 
 </head>
 
 <body>
-  
+
+  <div class="topnav">
+    <button class="tab-btn" onclick="myFunction()"></button>
+    <input class="searchbar" placeholder="Search..."></input>
+    <div class="profile-pic"></div>
+  </div>
+
+  <div class="lowercontent">
+    <div class="displayshow tab" id="sidenav">
+      <div class="tab-sect">
+        <p>Home</p>
+        <p>Reports</p>
+        <p>Inbox</p>
+      </div>
+      <div class="tab-sect">
+        <p>Quick Reports</p>
+        <p>My Spending</p>
+        <p>Transactions</p>
+      </div>
+    </div>
+    <div class="content-section">
+      <h1>Home</h1>
+      <div class="panel-grid">
+        <div class="panel" id="panel1">
+          <h3>Inbox</h3>
+          <div class= "panel-content">
+            <div class="panel-list">
+              <div class="list-line">
+                <p class="badge">Verify</p>
+                <p>Import Content</p>
+              </div>
+              <div class="list-line">
+                <p class="badge">Budget</p>
+                <p>Import Content</p>
+              </div>
+              <div class="list-line">
+                <p class="badge">Alert</p>
+                <p>Import Content</p>
+              </div>
+              <div class="list-line">
+                <p class="badge">Message</p>
+                <p>Import Content</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel2">
+          <h3>Reports</h3>
+          <div class= "panel-content">
+            <div class="panel-graph"></div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel3">
+          <h3>Teams</h3>
+          <div class= "panel-content">
+            <div class="panel-teams">
+              <div class="team" id="team1">
+                <img src="Assets/Marketing.png">
+                <p>Marketing</p>
+              </div>
+              <div class="team" id="team2">
+                <img src="Assets/Merchandising.png">
+                <p>Merchandising</p>
+              </div>
+              <div class="team" id="team3">
+                <img src="Assets/Accounting.png">
+                <p>Merchandising</p>
+              </div>
+              <div class="team" id="team4">
+                <img src="Assets/Operations.png">
+                <p>Merchandising</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel4">
+          <h3>Quick Reports</h3>
+          <div class= "panel-content">
+            <div class="panel-pie"></div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel5">
+          <h3>My Spending</h3>
+          <div class= "panel-content">
+            <div class="panel-list">
+              <div class="list-line" id="myspendingline1">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="myspendingline2">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="myspendingline3">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="myspendingline4">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="myspendingline5">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="myspendingline6">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="myspendingline7">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="myspendingline8">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel" id="panel6">
+          <h3>Transactions</h3>
+          <div class= "panel-content">
+            <div class="panel-list">
+              <div class="list-line" id="trans1">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="trans2">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="trans3">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="trans4">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="trans5">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="trans6">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="mtrans7">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+              <div class="list-line" id="trans8">
+                <img class="pfp"></img>
+                <p>Import Amount</p>
+                <p>Import Content</p>
+                <p>Import Date</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-  
+
+<script>
+function myFunction() {
+  var element = document.getElementById("sidenav");
+  if (element.classList.contains("displayshow")) {
+    element.classList.remove("displayshow");
+    element.classList.add("displaynone");
+  } else {
+    element.classList.remove("displaynone");
+    element.classList.add("displayshow");
+  }
+}
+</script>
+
 </html>
