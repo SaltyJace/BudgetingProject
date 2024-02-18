@@ -104,7 +104,6 @@ body{
     background-color: #262628;
     width: 100%;
     height: fit-content;
-    transition: .4s ease;
 }
 .content-section h1{
     margin-top: 15px;
@@ -134,13 +133,127 @@ body{
     overflow: hidden;
     color: #fff;
 }
-.panel:hover{
-    transform: scale(1.005);
-    transition: .2s ease;
-}
 .panel h3{
     padding-left: 10%;
 }
 .panel-content{
     padding: 5%;
+}
+
+                                                        /* PANEL 1 CONTENT */
+.list-line{
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid #737081;
+    height: 35px;
+}
+.list-line p{
+    margin: 0;
+    align-self: center;
+}
+.badge{
+    margin: 0;
+    align-self: flex-start;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.verify{
+    background-color: #D27979;
+}
+.budget{
+    background-color: #D29F79;
+}
+.alert{
+    background-color: #D1D279;
+    color: #262628;
+}
+.message{
+    background-color: #D2D2D2;
+    color: #262628;
+}
+
+/* PANEL 2 CONTENT */
+.panel-graph{
+    height: 75%;
+    width: 100%;
+    background-color: #36333A;
+    border-radius: 20px;
+}
+
+/* PANEL 3 CONTENT */
+
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 10px;
+    margin-bottom: 3%;
+}
+.team img{
+    width: 15%;
+    height: 15%;
+    align-self: center;
+}
+.team p{
+    margin: 0;
+    align-self: center;
+}
+
+/* PANEL 4 CONTENT */
+
+.panel-pie{
+    height: 75%;
+    width: 100%;
+    background-color: #36333A;
+    border-radius: 20px;
+}
+
+/* PANEL 5 CONTENT */
+
+.spending-list-line{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #737081;
+    height: 35px;
+    gap: 10px;
+}
+.spending-list-line p{
+    font-family: "Lexend", sans-serif;
+    margin: 0;
+    align-self: center;
+}
+.pfp{
+    background-color: #7c76d1;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+.amt{
+    font-weight: 600;
+    width: fit-content;
+    margin: 0;
+    flex-grow: 1;
+}
+.cmt{
+    color: #F2F2F2;
+    font-weight: 300;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    flex-grow: 3;
+}
+.dmt{
+    font-weight: 200;
+    color: #C8C8C8;
+    flex-grow: 1;
+    justify-self: flex-end;
 }
